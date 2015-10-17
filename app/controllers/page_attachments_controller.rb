@@ -27,9 +27,16 @@ class PageAttachmentsController < ApplicationController
   end
 
   def update
+    if @page_attachment.update(page_attachment_params)
+      redirect_to @page_attachment, notice: "Page attachment was successfully updated!"
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @page_attachment.destroy
+    redirect_to root_path
   end
 
   private
