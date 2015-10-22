@@ -2,7 +2,7 @@ class PageAttachmentsController < ApplicationController
   before_action :find_page_attachment, only: [:show, :edit, :update, :destroy]
 
   def index
-    @page_attachment = PageAttachment.all.order("created_at DESC")
+    @page_attachments = PageAttachment.all.order("created_at DESC")
   end
 
   def show

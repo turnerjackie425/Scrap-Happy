@@ -3,5 +3,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   #before_action :authenticate_user!
-
+  has_many :page_attachments
 end
