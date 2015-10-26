@@ -7,7 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div class="nav nav-bar navbar-default">
+    <div class="container">
+      <div class="navbar-brand">
+        <%= link_to "Scrapbook Page", root_path %>
+          <% if user_signed_in? %>
+            <ul class="nav navbar-nav.navbar-right">
+              <li><%= link_to "New Page Attachment", new_page_attachment_path %></li>
+              <li><%= link_to "Account", edit_user_registration_path %></li>
+              <li><%= link_to "Sign Out", destroy_user_session_path %>
+            </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, class: 'alert alert-info' %>
   <% end %>
