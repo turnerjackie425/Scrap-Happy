@@ -1,5 +1,6 @@
 class PageAttachmentsController < ApplicationController
   before_action :find_page_attachment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   def index
     @page_attachments = PageAttachment.all.order("created_at DESC")
@@ -10,11 +11,11 @@ class PageAttachmentsController < ApplicationController
   end
 
   def new
-    @page_attachment = PageAttachment.new
+    @page_attachment = current_user.page_attachments.build
   end
 
   def create
-    @page_attachment = PageAttachment.new(page_attachment_params)
+    @page_attachment = current_user.page_attachments.build(page_attachment_params)
     
     if @page_attachment.save
       redirect_to @page_attachment, notice: "Successfully created new page attachment"  
