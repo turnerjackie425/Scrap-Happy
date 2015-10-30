@@ -1,4 +1,4 @@
-<div class="container">
+
   <% if user_signed_in? %>
     <%= link_to "New Page Attachment", new_page_attachment_path %>
     <% @page_attachments.each do |attachment| %>
@@ -7,4 +7,3 @@
   <% else %>
     <h2>Please sign in to view your scrapbook!</h2>
   <% end %>
-</div>
