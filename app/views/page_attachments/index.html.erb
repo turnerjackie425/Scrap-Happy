@@ -1,10 +1,11 @@
 <div class="content">
-  <% if user_signed_in? %>
-
-    <% @page_attachments.each do |attachment| %>
-      <h2><%= link_to attachment.title, attachment %></h2>
+  <div class="col-md-6">
+    <% if user_signed_in? %>
+      <% @page_attachments.each do |attachment| %>
+        <h2><%= link_to attachment.title, attachment %></h2>
+      <% end %>
+    <% else %>
+      <h2>Please sign in to view your scrapbook!</h2>
     <% end %>
-  <% else %>
-    <h2>Please sign in to view your scrapbook!</h2>
-  <% end %>
+  </div>
 </div>

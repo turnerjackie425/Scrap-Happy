@@ -12,6 +12,7 @@ gem 'simple_form', '~> 3.1.1'
 gem 'puma', '~> 2.14.0'
 gem 'devise'
 gem 'figaro', '1.0'
+gem 'paperclip', '~> 4.3', '>= 4.3.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
