@@ -22,7 +22,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
 
   #needed for image-uploading
-  Paperclip.options[:command_path] = "/usr/local/bin/convert"
+  #Paperclip.options[:command_path] = "/usr/local/bin/convert"
   
   #needed for devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }

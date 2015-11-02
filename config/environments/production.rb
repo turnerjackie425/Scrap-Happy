@@ -79,8 +79,4 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {:host => 'heroku.com'}
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address => "127.0.0.1",
-    :port    => 3000,
-    :domain  => 'yourdomain.com'
 end
