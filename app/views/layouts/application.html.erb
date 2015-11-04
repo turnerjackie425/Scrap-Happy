@@ -16,7 +16,7 @@
     </div>
       <% if user_signed_in? %>
         <p class="nav navbar-nav navbar-right">
-          <%= link_to "New Page Attachment", new_page_attachment_path %> |
+          <%= link_to "Upload New Image", new_page_attachment_path %> |
           Hello <%= link_to current_user.email, edit_user_registration_path %>! <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
       <% else %>
         <p class="nav navbar-nav navbar-right">

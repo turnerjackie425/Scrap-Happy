@@ -43,7 +43,7 @@ class PageAttachmentsController < ApplicationController
   private
 
   def page_attachment_params
-    params.require(:page_attachment).permit(:title, :description)
+    params.require(:page_attachment).permit(:title, :description, :image)
   end
 
   def find_page_attachment
