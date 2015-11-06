@@ -18,7 +18,7 @@ class PageAttachmentsController < ApplicationController
     @page_attachment = current_user.page_attachments.build(page_attachment_params)
     
     if @page_attachment.save
-      redirect_to @page_attachment, notice: "Successfully created new page attachment"  
+      redirect_to @page_attachment, notice: "Successfully uploaded new image."  
     else
       render 'new'
     end
