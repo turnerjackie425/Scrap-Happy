@@ -17,11 +17,6 @@
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
   padding: 1em;
   text-align: center;
-
-    form {
-    margin: auto;
-    width: 100%;
-    }
   }
 
 .navbar-right {
@@ -131,4 +126,7 @@ nav {
   }
 }
 
-
+.choose-file-field{
+  margin: auto;
+  width: 30%;
+}
