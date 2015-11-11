@@ -8,14 +8,15 @@
 @import "bootstrap";
 
 .imageContainer {
-  margin: 0 10px 0 140px;
+  margin: 0 auto;
   width: 100%;
+  height: 100%;
         }
 .container {
   background-color: white;
   width: 25%;
-  height: 450px;
-  float:left;
+  float: left;
+  alignment: center;
   margin: 6em 10px 10px 10px;
   border-radius: 7px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);

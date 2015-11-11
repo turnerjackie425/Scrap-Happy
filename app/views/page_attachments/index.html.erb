@@ -1,15 +1,16 @@
-<div class="imageContainer">
+
 <% if user_signed_in? %>
-  <div id="page_attachments.transitions-enabled">
-    <% @page_attachments.each do |attachment| %>
-      <div class="container">
+  <% @page_attachments.each do |attachment| %>
+    <div class="imageContainer">
+      <div id="page_attachments.transitions-enabled">
+        <div class="container">
         <%= link_to (image_tag attachment.image.url(:medium)), attachment %>
-        <div class="panel-body">
-          <h2><%= link_to attachment.title, attachment %></h2>
-          <p class="user">Submitted by <%= attachment.user.name %></p>
+          <div class="panel-body">
+            <h2><%= link_to attachment.title, attachment %></h2>
+            <p class="user">Submitted by <%= attachment.user.name %></p>
+          </div>
         </div>
       </div>
-    </div>
     <% end %>
 <% else %>
   <h2>Please sign in to view your scrapbook!</h2>
