@@ -10,24 +10,27 @@
 
 .container {
   background-color: white;
-  width: 50%;
-  max-width: 400px;
-  margin: 6em auto 0 auto;
+  width: 25%;
+  height: 450px;
+  float: left;
+  margin: 6em 10px 10px 10px;
   border-radius: 7px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-  padding: 1em;
+  padding: 10px;
   text-align: center;
+
+    .panel-body {
+    padding: 35px;
+    h1 {
+      margin: 0 0 10px 0;
+    }
   }
+}
 
 .navbar-right {
     float: right;
     margin-right: 40px; 
     margin-top: 10px
-  }
-
-.content {
-    margin: 6em auto 0 auto;
-    align: center;
   }
 
 body {
@@ -130,3 +133,4 @@ nav {
   margin: auto;
   width: 30%;
 }
+

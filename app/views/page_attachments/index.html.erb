@@ -1,7 +1,8 @@
+
 <% if user_signed_in? %>
   <div id="page_attachments.transitions-enabled">
     <% @page_attachments.each do |attachment| %>
-      <div class="container panel-default">
+      <div class="container">
         <%= link_to (image_tag attachment.image.url(:medium)), attachment %>
         <div class="panel-body">
           <h2><%= link_to attachment.title, attachment %></h2>
