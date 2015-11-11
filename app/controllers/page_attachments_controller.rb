@@ -29,7 +29,7 @@ class PageAttachmentsController < ApplicationController
 
   def update
     if @page_attachment.update(page_attachment_params)
-      redirect_to @page_attachment, notice: "Page attachment was successfully updated!"
+      redirect_to @page_attachment, notice: "Image was successfully updated!"
     else
       render 'edit'
     end

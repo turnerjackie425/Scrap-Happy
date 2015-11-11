@@ -1,8 +1,8 @@
-<div class="content">
-  <div class="col-md-6">
+<div class="container">
+  
     <h1>Edit Image</h1>
-    <%= image_tag @page_attachment.image.url(:medium) %>
+    <%= image_tag @page_attachment.image.url(:medium) %><br>
     <%= render 'form' %>
     <%= link_to 'Cancel', root_path %>
-  </div>
+
 </div>

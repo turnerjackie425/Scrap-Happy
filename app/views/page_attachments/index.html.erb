@@ -5,6 +5,7 @@
         <%= link_to (image_tag attachment.image.url(:medium)), attachment %>
         <div class="panel-body">
           <h2><%= link_to attachment.title, attachment %></h2>
+          <p class="user">Submitted by <%= attachment.user.name %></p>
         </div>
       </div>
     </div>
