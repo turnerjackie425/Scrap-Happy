@@ -1,8 +1,10 @@
-<div class="container">
+<div class="imageContainer">
+
+<div class="edit_page">
   
     <h1>Edit Image</h1>
     <%= image_tag @page_attachment.image.url(:medium) %><br>
     <%= render 'form' %>
     <%= link_to 'Cancel', root_path %>
-
+</div>
 </div>

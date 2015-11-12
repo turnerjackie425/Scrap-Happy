@@ -1,7 +1,7 @@
 
 <% if user_signed_in? %>
   <% @page_attachments.each do |attachment| %>
-    <div class="imageContainer">
+ 
       <div id="page_attachments.transitions-enabled">
         <div class="container">
         <%= link_to (image_tag attachment.image.url(:medium)), attachment %>
@@ -15,4 +15,3 @@
 <% else %>
   <h2>Please sign in to view your scrapbook!</h2>
 <% end %>
-</div>
