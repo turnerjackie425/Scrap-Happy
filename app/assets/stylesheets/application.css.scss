@@ -15,51 +15,39 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
-index_container{
-  margin: 0 auto;
-  width: 100%;  
-}
-
-.container {
+.index_container {
   background-color: white;
-  width: 25%;
+  width: 30%;
   float: left;
-  position: relative;
-  margin: 6em 10px 10px 10px;
+  position: centered;
+  margin: 6em 10px 10px 30px;
   border-radius: 7px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 
     .panel-body {
-    padding: 35px;
+    padding: 25px;
     h1 {
       margin: 0 0 10px 0;
     }
   }
 }
 
+.container {
+  background-color: white;
+  width: 30%;
+  margin: 10em 10px 10px 90px;
+  border-radius: 7px;
+  box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+  padding: 10px;
+  text-align: center;
+}
+
 #page_attachments {
   margin: 1 auto;
   width: 100%;
-    
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    h2 {
-      font-size: 22px;
-      margin: 0;
-      padding: 25px 10px;
-    }
-    .user {
-      font-size: 12px;
-      border-top: 1px solid #EAEAEA;
-        padding: 15px;
-        margin: 0;
-    }
 }
-
 
 .imageContainer /* for edit, new and show pages */ {
   margin: 0 450px 20px;
@@ -67,8 +55,7 @@ index_container{
   height: 100%;
   }
 
-
-.choose-file-field{
+.choose-file-field {
   margin: auto;
   width: 30%;
 }
@@ -79,15 +66,9 @@ index_container{
     margin-top: 10px
   }
 
-
 nav {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   .navbar-brand {
         text-decoration: none;
   }
 }
-
-
-
-
-
