@@ -11,8 +11,10 @@
     <% end %>
   </div>
     <br>
-  <%= link_to "Home", root_path %> |
-  <%= link_to "Edit", edit_page_attachment_path %> |
-  <%= link_to "Delete", page_attachment_path, method: :delete, data: { confirm: "Are you sure you want to delete this page attachment?" } %>
+  <% if current_user.present? %>
+    <%= link_to "Home", root_path %> |
+    <%= link_to "Edit", edit_page_attachment_path %> |
+    <%= link_to "Delete", page_attachment_path, method: :delete, data: { confirm: "Are you sure you want to delete this page attachment?" } %>
+  <% end %>
   </div>
 </div>

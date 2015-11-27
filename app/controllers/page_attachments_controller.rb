@@ -1,6 +1,6 @@
 class PageAttachmentsController < ApplicationController
   before_action :find_page_attachment, only: [:show, :edit, :update, :destroy, :upvote]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @page_attachments = PageAttachment.all.order("created_at DESC")
