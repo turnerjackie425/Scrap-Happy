@@ -9,11 +9,12 @@
             <p class="user">Submitted by <%= attachment.user.name %></p>
           </div>
         </div>
-    
-  </div>
-<% end %>
+    </div>
+    <% end %>
 
 <% else %>
-  <h2>Please sign in to view your scrapbook!</h2>
+  <div class="container">
+    <h2>Please <%= link_to "sign in", new_user_session_path %> to view your scrapbook!</h2>
+  </div>
 <% end %>
 
