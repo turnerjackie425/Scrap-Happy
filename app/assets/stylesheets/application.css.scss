@@ -18,8 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   margin: 6em 5px 5px 70px
 }
- 
-
 
 #masonry-container {
   background: #FFF;
@@ -38,35 +36,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-    .box {
-      margin: 10px;
-      background-color: white;
-      width: 300px;
-      box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-      text-align: center;
-      
-
-  
-    }
-
-    .user {
-      font-size: 12px;
-      border-top: 1px solid #EAEAEA;
-        padding: 15px;
-        margin: 0;
-    }
-  
-
-
-
-.container {
+.box {
+  margin: 10px;
   background-color: white;
   width: 300px;
-  margin: 3px 10px 10px 500px;
-  border-radius: 7px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-  padding: 0;
-  text-align: center;
+  text-align: center;  
+}
+
+.image {
+  width: 300px;
+  height: auto;
+}
+
+.user {
+  font-size: 12px;
+  border-top: 1px solid #EAEAEA;
+    padding: 15px;
+    margin: 0;
+}
+  
+.show_page_content {
+  margin: 8em 5px 5px 520px
 }
 
 .choose-file-field {
