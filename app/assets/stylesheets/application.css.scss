@@ -15,52 +15,59 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
-.index_container {
-  background-color: white;
-  width: 30%;
-  float: left;
-  position: centered;
-  margin: 6em 5px 5px 30px;
-  border-radius: 7px;
-  box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-  padding: 5px;
-  text-align: center;
-    /*
-    .image{
-      max-width: 100%;
-      width: 100%;
-      display: block;
-      margin: 0 auto;
-    }
-    */
-    .panel-body {
-    padding: 25px;
-    h1 {
-      margin: 0 0 10px 0;
-    }
-  }
+.content {
+  margin: 6em 5px 5px 70px
 }
+ 
+
+
+#masonry-container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+    .box {
+      margin: 10px;
+      background-color: white;
+      width: 300px;
+      box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+      text-align: center;
+      
+
+  
+    }
+
+    .user {
+      font-size: 12px;
+      border-top: 1px solid #EAEAEA;
+        padding: 15px;
+        margin: 0;
+    }
+  
+
+
 
 .container {
   background-color: white;
-  width: 30%;
-  margin: 10em 10px 10px 500px;
+  width: 300px;
+  margin: 3px 10px 10px 500px;
   border-radius: 7px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-  padding: 10px;
+  padding: 0;
   text-align: center;
 }
-
-#page_attachments {
-  margin: 1 auto;
-  width: 100%;
-}
-
-.imageContainer /* for edit, new and show pages */ {
-  margin: 0 450px 20px;
-  width: 100%;
-  height: 100%;
-  }
 
 .choose-file-field {
   margin: auto;

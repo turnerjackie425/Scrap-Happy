@@ -1,5 +1,5 @@
 $ ->
-  $('#page_attachments').imagesLoaded ->
-    $('#page_attachments').masonry
-      itemSelector: '.index_container'
+  $('#masonry_container').imagesLoaded ->
+    $('#masonry_container').masonry
+      itemSelector: '.box'
       isFitWidth: true

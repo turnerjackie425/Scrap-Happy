@@ -1,20 +1,19 @@
-<div class="imageContainer">
-  <div class="container"><%= image_tag @page_attachment.image.url(:medium) %>
-    <h1><%= @page_attachment.title %></h1>
-    <p><%= @page_attachment.description %></p>
-    <p>Submitted by <%=@page_attachment.user.name %></p>
-    <br>
+<div class="container">
+  <%= image_tag @page_attachment.image.url(:medium) %>
+  <h1><%= @page_attachment.title %></h1>
+  <p><%= @page_attachment.description %></p>
+  <p>Submitted by <%=@page_attachment.user.name %></p>
+  <br>
 
-  <div class="btn-group.pull-right">
-    <%= link_to like_page_attachment_path(@page_attachment), method: :put, class: "glyphicon glyphicon-heart" do %>
-        <%= @page_attachment.get_upvotes.size %>
-    <% end %>
-  </div>
-    <br>
-  <% if current_user.present? %>
-    <%= link_to "Home", root_path %> |
-    <%= link_to "Edit", edit_page_attachment_path %> |
-    <%= link_to "Delete", page_attachment_path, method: :delete, data: { confirm: "Are you sure you want to delete this page attachment?" } %>
+<div class="btn-group.pull-right">
+  <%= link_to like_page_attachment_path(@page_attachment), method: :put, class: "glyphicon glyphicon-heart" do %>
+      <%= @page_attachment.get_upvotes.size %>
   <% end %>
-  </div>
+</div>
+  <br>
+<% if current_user.present? %>
+  <%= link_to "Home", root_path %> |
+  <%= link_to "Edit", edit_page_attachment_path %> |
+  <%= link_to "Delete", page_attachment_path, method: :delete, data: { confirm: "Are you sure you want to delete this page attachment?" } %>
+<% end %>
 </div>
