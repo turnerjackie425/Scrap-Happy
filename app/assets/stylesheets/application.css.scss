@@ -61,8 +61,17 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 .show_page_content {
-  margin: 8em 5px 5px 520px
+  margin: 8em 5px 5px 520px;
+  padding: 10px;
+}
 
+.show_page_box {
+  margin: 10px;
+  background-color: white;
+  width: 300px;
+  box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+  text-align: center;
+  padding: 10px;
 }
 
 .choose-file-field {
