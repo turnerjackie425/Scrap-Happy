@@ -1,7 +1,11 @@
-<div class="container">
-<p>Welcome to Scrap Happy <%= @email %>!</p>
+<div class="content">
+  <div class="show_page_content">
+    <div class="show_page_box">
+      <p>Welcome to Scrap Happy <%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
+      <p>You can confirm your account email through the link below:</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+      <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    </div>
+  </div>
 </div>
