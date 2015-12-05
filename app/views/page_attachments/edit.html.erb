@@ -1,11 +1,12 @@
 <div class="show_page_content">
-  <h1>Edit Image</h1>
   <div class="box">
+    <h1>Edit Image</h1>
     <%= image_tag @page_attachment.image.url(:medium) %>
     <br>
     <div><%= render 'form' %>
     <%= link_to 'Cancel', root_path %>
     </div>
+    <br>
   </div>
 </div>
 
