@@ -1,27 +1,25 @@
 <div class="content">
   <% if user_signed_in? %>
-
     <% @page_attachments.each do |attachment| %>
     <div id="masonry_container" class="transitions-enabled infinite-scroll clearfix"> 
-    
       <div class="box">
         <%= link_to (image_tag attachment.image.url(:medium)), attachment %>
           <h2><%= link_to attachment.title, attachment %></h2>
         <br>
       <div class="user">Submitted by <%= attachment.user.name %>
-    
+      </div>     
       </div>
-     
-  </div>
     <% end %>
 
-<% else %>
-<div class="signin_page">
+  <% else %>
+  <div class="signin_page">
     <h2>Please <%= link_to "sign in", new_user_session_path %> to view your scrapbook!</h2>
     <br>
     <h3> Or <%= link_to "sign up", new_user_registration_path %> to start creating your personalized scrapbook! </h3>
-</div>
-<% end %>
+  </div>
+  <% end %>
+  
+  </div>
 </div>
 
 
