@@ -12,14 +12,13 @@
     <% end %>
 
   <% else %>
-  <div class="signin_page">
-    <h2>Please <%= link_to "sign in", new_user_session_path %> to view your scrapbook!</h2>
-    <br>
-    <h3> Or <%= link_to "sign up", new_user_registration_path %> to start creating your personalized scrapbook! </h3>
-  </div>
+  <div class="show_page_content">
+    <div class="box">
+      <h2>Please <%= link_to "sign in", new_user_session_path %><br> Or <%= link_to "sign up", new_user_registration_path %></h2>
+    </div>
   <% end %>
-  
   </div>
+  
 </div>
 
 

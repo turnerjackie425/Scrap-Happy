@@ -38,8 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
-
 .box {
   margin: 10px;
   background-color: white;
@@ -47,15 +45,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
   text-align: center; 
 
-  h1 {
+  h2 {
     padding: 10px;
     text-decoration: bold;
   } 
-}
-
-.image {
-  width: 300px;
-  height: auto;
 }
 
 .user {
