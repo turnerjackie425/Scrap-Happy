@@ -1,3 +1,4 @@
+require 'sendgrid-ruby'
 
   ActionMailer::Base.smtp_settings = {
     address:        'smtp.sendgrid.net',
